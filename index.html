@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio · AI로 만든 작업물</title>
+<style>
+  :root{--ink:#22201c;--muted:#6b665d;--line:#e6e1d8;--bg:#faf8f4;--card:#fff;--accent:#e9708a;--accent-soft:#fdebef}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+  .wrap{max-width:880px;margin:0 auto;padding:56px 24px 72px}
+  header p.kicker{margin:0;color:var(--accent);font-weight:700;letter-spacing:.04em;font-size:14px}
+  h1{font-size:clamp(28px,5vw,40px);line-height:1.25;margin:8px 0 12px}
+  header p.lead{color:var(--muted);margin:0;max-width:620px}
+  section{margin-top:44px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+  .card + .card{margin-top:20px}
+  .tag{display:inline-block;background:var(--accent-soft);color:#b0405a;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;margin-bottom:10px}
+  h2{margin:0 0 8px;font-size:22px}
+  dl{display:grid;grid-template-columns:72px 1fr;gap:6px 12px;margin:16px 0 20px;font-size:15px}
+  dt{color:var(--muted);font-weight:600}
+  dd{margin:0}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  a.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:10px 16px;border-radius:10px;border:1px solid var(--ink);color:var(--ink)}
+  a.btn.primary{background:var(--ink);color:#fff}
+  a.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 20px}
+  .shots img{width:100%;border-radius:10px;border:1px solid var(--line);display:block}
+  footer{margin-top:56px;color:var(--muted);font-size:14px}
+  footer a{color:inherit}
+  @media (max-width:560px){.shots{grid-template-columns:1fr 1fr}.shots img:last-child{display:none}dl{grid-template-columns:1fr}dt{margin-top:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">PORTFOLIO</p>
+    <h1>AI로 기획부터 완성까지,<br>직접 만든 작업물</h1>
+    <p class="lead">사무·기획 경력 없이 AI 부트캠프를 다니며, 직접 문제를 정하고 Claude를 도구로 써서 끝까지 만들어 본 결과물을 모았어요.</p>
+  </header>
+
+  <section aria-label="작업물">
+    <article class="card">
+      <span class="tag">웹사이트</span>
+      <h2>맞춤식단</h2>
+      <p>비건·고단백 식단을 하거나 음식 알러지가 있어도 외식할 수 있도록, 서울·대전에서 조건에 맞는 식당을 골라 둔 안내 사이트예요.</p>
+      <dl>
+        <dt>문제</dt><dd>식단 제약이나 알러지가 있으면 갈 수 있는 식당을 찾기 어렵다</dd>
+        <dt>기능</dt><dd>내 식단·알러지 설정, 숨은 재료 경고, 한/영 주문 카드, 숨은 재료 가이드</dd>
+        <dt>방법</dt><dd>Claude와 기획 → 식당 정보 조사 → 한 장짜리 웹페이지로 구현</dd>
+      </dl>
+      <div class="btns">
+        <a class="btn primary" href="./matchum-sikdan/">사이트 열기 →</a>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p><a href="https://www.linkedin.com/in/hyerim-ai/">LinkedIn</a> · GitHub <a href="https://github.com/fhfk-spec">@fhfk-spec</a> · LLM아카데미 실습 결과물은 <a href="https://github.com/fhfk-spec/llm-academy-practice">llm-academy-practice</a>에 있어요.</p>
+  </footer>
+</div>
+</body>
+</html>
